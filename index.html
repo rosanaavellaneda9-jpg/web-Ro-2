@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molina Fernández | Archivo de Obra e Investigación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f4f4f2; color: #1a1a1a; scroll-behavior: smooth; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .masonry { column-count: 1; column-gap: 1.5rem; }
+        @media (min-width: 768px) { .masonry { column-count: 3; } }
+        .masonry-item { break-inside: avoid; margin-bottom: 1.5rem; filter: grayscale(100%); transition: all 0.5s ease; cursor: crosshair; }
+        .masonry-item:hover { filter: grayscale(0%); transform: translateY(-5px); }
+    </style>
+</head>
+<body class="selection:bg-gray-300">
+
+    <nav class="fixed top-0 w-full p-6 md:p-10 flex justify-between items-center z-50 mix-blend-difference text-white">
+        <div class="mono text-[10px] tracking-tighter uppercase font-bold">Molina Fernández / 2026</div>
+        <div class="flex gap-6 md:gap-10 text-[9px] uppercase tracking-widest">
+            <a href="#obra" class="hover:opacity-50 transition-opacity">Obra</a>
+            <a href="#proceso" class="hover:opacity-50 transition-opacity">Investigación</a>
+            <a href="#contacto" class="hover:opacity-50 transition-opacity">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="min-h-screen flex flex-col md:flex-row border-b border-gray-300">
+        <div class="w-full md:w-1/2 p-8 md:p-20 flex flex-col justify-end bg-[#f4f4f2]">
+            <h1 class="text-6xl md:text-8xl font-light tracking-tighter leading-none mb-10">Materia <br> & Memoria.</h1>
+            <p class="max-w-md text-sm leading-relaxed opacity-70 mb-12">
+                Exploración técnica sobre el registro geológico y el paisaje transformado de Bahía Blanca. 
+                Suelo, sedimento y memoria como elementos de construcción artística.
+            </p>
+            <div class="mono text-[10px] opacity-40 uppercase tracking-widest">
+                Latitud: 38.7183° S <br> Longitud: 62.2663° W
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 bg-gray-300 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1541411191173-61b60626359b?q=80&w=1500&auto=format&fit=crop" 
+                 class="w-full h-full object-cover grayscale contrast-125" alt="Textura de obra">
+            <div class="absolute bottom-6 right-6 mono text-[10px] text-white uppercase opacity-60">Fig. 00 — Referencia de Suelo</div>
+        </div>
+    </header>
+
+    <main id="obra" class="p-8 md:p-20 bg-white">
+        <h2 class="mono text-[10px] uppercase tracking-[0.5em] mb-20 opacity-30 text-center md:text-left underline underline-offset-8">Catálogo Visual / Series</h2>
+        
+        <div class="masonry">
+            <div class="masonry-item border border-gray-100 p-2 bg-[#fcfcfc]">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&q=80&w=800" class="w-full h-auto">
+                <p class="mt-4 text-[9px] uppercase mono opacity-50 tracking-tighter">Muestra 01: Placas de Limo Comprimido</p>
+            </div>
+            <div class="masonry-item border border-gray-100 p-2 bg-[#fcfcfc]">
+                <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&q=80&w=800" class="w-full h-auto">
+                <p class="mt-4 text-[9px] uppercase mono opacity-50 tracking-tighter">Muestra 02: Registro de Inundación (07/03/25)</p>
+            </div>
+            <div class="masonry-item border border-gray-100 p-2 bg-[#fcfcfc]">
+                <img src="https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&q=80&w=800" class="w-full h-auto">
+                <p class="mt-4 text-[9px] uppercase mono opacity-50 tracking-tighter">Muestra 03: Emulsión sobre Vidrio Recuperado</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contacto" class="p-8 md:p-20 border-t border-gray-300 flex flex-col md:flex-row justify-between items-start gap-12 bg-[#f4f4f2]">
+        <div class="max-w-md">
+            <h3 class="text-3xl font-light mb-8 tracking-tighter italic">Conversaciones.</h3>
+            <p class="text-sm opacity-60 leading-loose mb-8">
+                Para consultas sobre el archivo, procesos técnicos o disponibilidad de obra:
+            </p>
+            <a href="mailto:hola@tudominio.com" class="text-lg border-b border-black pb-1 hover:opacity-50 transition-all">hola@tuartesitio.com</a>
+        </div>
+        <div class="flex flex-col gap-4">
+            <span class="mono text-[9px] uppercase opacity-30 tracking-[0.3em]">Links Externos</span>
+            <a href="#" class="mono text-[10px] uppercase tracking-widest hover:underline">Instagram</a>
+            <a href="#" class="mono text-[10px] uppercase tracking-widest hover:underline">Spotify</a>
+            <a href="#" class="mono text-[10px] uppercase tracking-widest hover:underline">Archivo Digital</a>
+        </div>
+    </footer>
+
+</body>
+</html>
